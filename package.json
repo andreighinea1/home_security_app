@@ -1,21 +1,44 @@
 {
   "name": "home_security_app",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build_dev": "eas build -p android --profile development",
+    "build_prod": "eas build -p android --profile production"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^5.0.0",
+    "@expo/webpack-config": "^18.0.1",
+    "@gluestack-style/animation-plugin": "latest",
+    "@gluestack-style/react": "latest",
+    "@gluestack-ui/button": "latest",
+    "@gluestack-ui/provider": "latest",
+    "@gluestack-ui/textarea": "latest",
+    "@react-native-aria/interactions": "^0.2.8",
+    "@react-native-async-storage/async-storage": "1.17.11",
+    "@react-native-community/netinfo": "9.3.7",
+    "amazon-cognito-identity-js": "^6.2.0",
+    "aws-amplify": "^5.2.5",
     "expo": "~48.0.18",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-dom": "18.2.0",
+    "react-native-web": "~0.18.10",
+    "expo-dev-client": "~2.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@tsconfig/react-native": "^3.0.2",
+    "@types/jest": "^29.5.2",
+    "@types/react": "~18.0.27",
+    "@types/react-native": "^0.71.6",
+    "@types/react-test-renderer": "^18.0.0",
+    "react-native": "^0.71.8",
+    "react-native-web": "^0.18.12",
+    "typescript": "^4.9.4"
   },
   "private": true
 }

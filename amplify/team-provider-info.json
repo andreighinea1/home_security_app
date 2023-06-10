@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-homesecurityapp-dev-174512-authRole",
+      "UnauthRoleArn": "arn:aws:iam::520346743631:role/amplify-homesecurityapp-dev-174512-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::520346743631:role/amplify-homesecurityapp-dev-174512-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-homesecurityapp-dev-174512-deployment",
+      "UnauthRoleName": "amplify-homesecurityapp-dev-174512-unauthRole",
+      "StackName": "amplify-homesecurityapp-dev-174512",
+      "StackId": "arn:aws:cloudformation:eu-west-1:520346743631:stack/amplify-homesecurityapp-dev-174512/3e3f3ff0-06d4-11ee-ac65-069e0d44efe9",
+      "AmplifyAppId": "d5fqrow3wgdqd"
+    }
+  }
+}
