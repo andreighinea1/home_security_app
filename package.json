@@ -5,7 +5,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build_dev": "eas build -p android --profile development",
+    "build_prod": "eas build -p android --profile production"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^5.0.0",
@@ -24,7 +26,8 @@
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native-web": "~0.18.10"
+    "react-native-web": "~0.18.10",
+    "expo-dev-client": "~2.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
