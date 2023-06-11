@@ -1,14 +1,14 @@
 import {
-  createStyled,
-  // FontResolver
+    createStyled,
+    // FontResolver
 } from '@gluestack-style/react';
-import { AnimationResolver } from '@gluestack-style/animation-plugin';
+import {AnimationResolver} from '@gluestack-style/animation-plugin';
 
 // const fontMapper = (style: any) => {};
 
 export const styled = createStyled([
-  new AnimationResolver({}),
-  // new FontResolver({
-  // mapFonts: fontMapper,
-  // }),
+    new AnimationResolver({}),
+    // new FontResolver({
+    // mapFonts: fontMapper,
+    // }),
 ]);

@@ -1,2 +1,3 @@
-import { Root as Text } from './styled-components';
-export { Text };
+import {Root as Text} from './styled-components';
+
+export {Text};
