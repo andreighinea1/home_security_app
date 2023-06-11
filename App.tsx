@@ -9,7 +9,7 @@ export default function App() {
     return (
         <GluestackUIProvider config={config.theme}>
             <Box bg="$primary500" w="100%" h="100%" display="flex" justifyContent="center" alignItems="center">
-                <Box bg="$primary500" p="$5">
+                <Box bg="$primary400" p="$5" rounded={10} style={config.theme.tokens.shadow['9']}>
                     <Text color="white">This is the Box</Text>
                     <Button onPress={() => alert("Clicked!")}>
                         <Button.Text>Click me!</Button.Text>
