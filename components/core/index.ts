@@ -28,5 +28,4 @@ export * from './styled';
 export * from './Switch';
 export * from './Text';
 export * from './TextArea';
-export * from './Tooltip';
 export * from './Vstack';

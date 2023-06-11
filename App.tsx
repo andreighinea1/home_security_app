@@ -1,21 +1,27 @@
-import {Box, Text, Button, GluestackUIProvider} from "./components";
-import {config} from "./gluestack-ui.config";
+import {Box, GluestackUIProvider} from "./components";
 import {Amplify} from 'aws-amplify';
 import awsExports from './aws-exports';
+import {config} from "./gluestack-ui.config";
+import {styles} from "./my-styles";
+import {NavigationContainer} from "@react-navigation/native";
+import {MainTabScreen} from "./screens";
 
 Amplify.configure(awsExports);
 
-export default function App() {
+const App = () => {
     return (
         <GluestackUIProvider config={config.theme}>
-            <Box bg="$primary500" w="100%" h="100%" display="flex" justifyContent="center" alignItems="center">
-                <Box bg="$primary400" p="$5" rounded={10} style={config.theme.tokens.shadow['9']}>
-                    <Text color="white">This is the Box</Text>
-                    <Button onPress={() => alert("Clicked!")}>
-                        <Button.Text>Click me!</Button.Text>
-                    </Button>
+            <Box style={styles.container}>
+                <Box style={styles.contentContainer}>
+                    <Box style={styles.screenWrapper}>
+                        <NavigationContainer>
+                            <MainTabScreen/>
+                        </NavigationContainer>
+                    </Box>
                 </Box>
             </Box>
         </GluestackUIProvider>
     );
 }
+
+export default App;
