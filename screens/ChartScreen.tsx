@@ -24,6 +24,8 @@ const ChartScreen = () => {
         legend: ["Rainy Days"] // optional
     };
     const screenWidth = Dimensions.get("window").width;
+    const screenHeight = Dimensions.get("window").height;
+
     const chartConfig = {
         backgroundColor: "#e26a00",
         backgroundGradientFrom: "#fb8c00",
@@ -42,11 +44,11 @@ const ChartScreen = () => {
 
     return (
         <GluestackUIProvider config={config.theme}>
-            <Box>
+            <Box flexGrow={1} alignItems="center">
                 <LineChart
                     data={data}
                     width={screenWidth}
-                    height={220}
+                    height={screenHeight * 0.25}
                     chartConfig={chartConfig}
                 />
             </Box>
