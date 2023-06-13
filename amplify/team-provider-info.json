@@ -10,6 +10,11 @@
       "StackName": "amplify-homesecurityapp-dev-174512",
       "StackId": "arn:aws:cloudformation:eu-west-1:520346743631:stack/amplify-homesecurityapp-dev-174512/3e3f3ff0-06d4-11ee-ac65-069e0d44efe9",
       "AmplifyAppId": "d5fqrow3wgdqd"
+    },
+    "categories": {
+      "api": {
+        "homesecurityapp": {}
+      }
     }
   }
 }

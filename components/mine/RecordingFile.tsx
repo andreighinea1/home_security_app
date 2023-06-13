@@ -3,7 +3,7 @@ import {config} from "../../gluestack-ui.config";
 import {styles} from "../../my-styles";
 
 const RecordingFile = (props) => {
-    const {url, datetime, navigation} = props
+    const {url, timestamp, navigation} = props
 
     return (
         <GluestackUIProvider config={config.theme}>
@@ -15,7 +15,7 @@ const RecordingFile = (props) => {
                         navigation.navigate('VideoPlayer', {url});
                     }
                 }>
-                    <Button.Text> Intrusion - {datetime} </Button.Text>
+                    <Button.Text> Intrusion - {timestamp} </Button.Text>
                 </Button>
             </Box>
         </GluestackUIProvider>
