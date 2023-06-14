@@ -10,6 +10,16 @@ const RecordingFile = (props) => {
             <Box display="flex" flexDirection="row" px="$5">
                 <Button
                     style={styles.recordingFileButton}
+                    // bg="$grayInactiveButton"
+                    // sx={{
+                    //     ":hover": {
+                    //         bg: "$grayContainer",
+                    //     },
+                    //     ":active": {
+                    //         bg: "$grayContainer",
+                    //     },
+                    // }}
+
                     onPress={
                     () => {
                         navigation.navigate('VideoPlayer', {url});

@@ -12,8 +12,10 @@ const FileListStackScreen = () => {
                 initialRouteName="FileList"
                 screenOptions={{
                     headerMode: 'float',
-                    headerTintColor: 'white',
-                    headerStyle: {backgroundColor: config.theme.tokens.colors.primary400},
+                    headerTintColor: '#848695',
+                    headerStyle: {
+                        backgroundColor: config.theme.tokens.colors.blueGrayStandard
+                    }
                 }}
             >
                 <Stack.Screen name="FileList" options={{title: 'File List'}} component={FileListScreen}/>
